@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    // 1.变量： 变量是一个存储数据的容器
+    let a = 2
+    // 2.数组： 数组是一个存储多个数据的容器(下标)
+    let arr = [1, 2, 3, 4]
+    // 3.对象： 对象是一个存储多个数据的容器(键值对)
+    let obj = {
+      name: 'ruiky',
+      age: 2
+    }
+
+    // 4.函数： 函数是一个存储代码的容器
+
+    // 4.1 声明式函数
+    function sayHi() {
+      console.log('hi')
+    }
+
+    // 4.2 匿名函数
+    let sayHi2 = function (a, b) {
+      console.log('hi2')
+    }
+
+    // 4.3 对象函数:函数 本质上 也是一个对象！
+    let sayHi3 = new Function('a', 'b', 'console.log(a,b,"hi3")')
+
+    console.dir(sayHi3)
+
+    sayHi3(1, 2)
+
+    // // 补充：箭头函数
+    // let sayHi3 = () => {
+    //   console.log('hi3')
+    // }
+  </script>
+</body>
+
+</html>

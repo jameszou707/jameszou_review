@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IntersectionObserve</title>
+
+</head>
+
+<body>
+  <!-- 可视区域 div -->
+  <div id="viewport">
+
+    <!-- 要被观察的元素 -->
+    <div id="observed"></div>
+  </div>
+
+  <script>
+    // 1.获取 页面上指定的 可视区域
+    const vp = document.querySelector('#viewport'); // 可视区域
+    const ob = document.querySelector("#observed"); // 被观察元素
+
+    // 2.设置 交叉观察 的配置信息
+    let options = {
+      root: vp, // 设置 可视区域
+      threshold: [0], // 指定 触发比例 时机
+      // rootMargin: '30px 100px 20px' // 指定 被观察元素 距离 可视区域的 触发偏移量
+    }
+
+    // 3.创建 交叉观察 的实例
+    let firstObserve = new IntersectionObserver(callback, options);
+
+    // 4.回调函数
+    function callback(entries, observer) {
+      // 遍历 交叉信息
+      entries.forEach(entry => {
+        // 判断 此时的 被观察元素 是否 进入了 可视区域
+        if (entry.isIntersecting) {
+          // 进入 可视区域，则修改成蓝色
+          entry.target.style.backgroundColor = '#0094ff';
+        } else {
+          // 不在 可视区域，则修改成红色
+          entry.target.style.backgroundColor = 'red';
+        }
+      })
+    }
+
+    // 5.监听 被观察元素
+    firstObserve.observe(ob)
+
+  </script>
+  <style>
+    #viewport {
+      width: 300px;
+      height: 400px;
+      border: 1px solid blue;
+      overflow: auto;
+    }
+
+
+    #box1 {
+      border: 1px solid #000;
+      height: 400px;
+      width: 270px;
+    }
+
+
+    #observed {
+      margin-top: 500px;
+      width: 100px;
+      height: 100px;
+      background: red;
+    }
+  </style>
+</body>
+
+</html>

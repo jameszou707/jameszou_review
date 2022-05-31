@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    // 声明式函数
+    // arguments： 实参伪数组
+    // this：函数的调用者，在函数调用时，谁.出这个函数，函数的this就指向谁
+    function sayHi(a, b, c) {
+      console.log(this)
+      console.log(arguments)
+    }
+
+    // 全局函数，默认 属于 winow对象
+    // 全局函数 调用时，可以省略前面的 window.
+    sayHi(1, 2, 3)// window.sayHi(1, 2, 3)
+
+
+    // 对象
+    let obj = {
+      name: 'ruiky',
+      age: 2,
+      sayHi: function () {
+        console.log(this)
+      },
+      gf: {
+        name: 'linda',
+        age: 3,
+        sayLove() {
+          console.log(this)
+        }
+      }
+    }
+
+    obj.sayHi()
+    obj.gf.sayLove()
+  </script>
+</body>
+
+</html>
