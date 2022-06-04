@@ -4683,7 +4683,9 @@ no-cache并不是指不缓存文件，no-store才是指不缓存文件。no-cach
 
 专题：[【传送门】](./techs/04IntersectionObserve.md)
 
+## 五.同时为github和gitee配置公钥
 
+专题：[【传送门】](./techs/06GitPushMany.md)
 
 # 面试题 =========================
 
