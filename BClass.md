@@ -11,7 +11,7 @@
 
 ### 1.1 学习内容
 
-![image-20220422130400041](assets/image-20220422130400041.png)
+![image-20220422130400041](https://md-1259458491.cos.ap-nanjing.myqcloud.com/teach/assets/image-20220422130400041.png)
 
 ### 1.2 阶段一
 
@@ -32,7 +32,7 @@
 
 ### 2.1 学习计划表
 
-![image-20220422132712742](assets/image-20220422132712742.png)
+![image-20220422132712742](https://md-1259458491.cos.ap-nanjing.myqcloud.com/teach/assets/image-20220422132712742.png)
 
 ### 2.2 视频与讲义
 

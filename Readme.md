@@ -14,7 +14,7 @@
 
 + 通过JS 根据 页面的内容宽度，显示 不同的 布局盒子
 
-![image-20220222140907583](assets/image-20220222140907583.png)
+![image-20220222140907583](https://md-1259458491.cos.ap-nanjing.myqcloud.com/teach/assets/image-20220222140907583.png)
 
 ### 1.2 弹性布局
 
@@ -37,7 +37,7 @@ function setRemUnit() {
 + rem基准值：放在 html根标签上，执行时机：首次加载，窗体改变大小
 + 字体默认大小：放在 body标签上，执行时机：首次记在
 
-![image-20220222114230143](assets/image-20220222114230143.png)
+![image-20220222114230143](https://md-1259458491.cos.ap-nanjing.myqcloud.com/teach/assets/image-20220222114230143.png)
 
 #### 1.2.2 使用rem单位
 
@@ -91,7 +91,7 @@ function setRemUnit() {
 + rpx（responsive pixel）: 可以根据屏幕宽度进行自适应。
 + 如在 iPhone6 上，屏幕宽度为375px，共有750个物理像素，则750rpx = 375px = 750物理像素，1rpx = 0.5px = 1物理像素。
 
-![img](assets/image-20220519_02.jpg)
+![img](https://md-1259458491.cos.ap-nanjing.myqcloud.com/teach/assets/image-20220519_02.jpg)
 
 ##### em
 
@@ -117,11 +117,11 @@ function setRemUnit() {
 
 + 浏览器默认的字号是16px，我们来看一些px单位与rem之间的转换关系：
 
-![img](assets/image-20220519_01.jpg)
+![img](https://md-1259458491.cos.ap-nanjing.myqcloud.com/teach/assets/image-20220519_01.jpg)
 
 为了方便计算，我们经常在<html>元素中设置font-size值为62.5%，相当于在<html>中设置font-size值为10px，此时，上面示例中所示的值将会改变：
 
-![img](assets/image-20220519_03.jpg)
+![img](https://md-1259458491.cos.ap-nanjing.myqcloud.com/teach/assets/image-20220519_03.jpg)
 
 + 如果css里面没有设定html的font-size，则默认浏览器以1rem=16px来换算。
 
@@ -131,17 +131,17 @@ function setRemUnit() {
   + 子盒子 设置绝对定位 超出父盒子时，会被父元素遮住，如图：
   + 如果想让子盒子 定位后 超出父盒子 的边框，怎么办？
 
-![子盒子被父盒子遮住](assets/image-20220505145700078.png)
+![子盒子被父盒子遮住](https://md-1259458491.cos.ap-nanjing.myqcloud.com/teach/assets/image-20220505145700078.png)
 
 + 解决方案：把父盒子 的 overflow 改成 visible
 
-![把父盒子的overflow改成 visible](assets/image-20220505145557990.png)
+![把父盒子的overflow改成 visible](https://md-1259458491.cos.ap-nanjing.myqcloud.com/teach/assets/image-20220505145557990.png)
 
 ### 1.3 dom操作
 
 #### 1.3.1 bom和dom
 
-![image-20220507154521504](assets/image-20220507154521504.png)
+![image-20220507154521504](https://md-1259458491.cos.ap-nanjing.myqcloud.com/teach/assets/image-20220507154521504.png)
 
 #### 1.3.2 dom操作
 
@@ -202,7 +202,7 @@ function setRemUnit() {
     + 标准、自定义、data-属性 都放在 **dom.attributes** 中
     + **同时** 标准属性 还设置给dom，data-属性 还设置给 dom.dataset 中(去掉了data-前缀)
 
-    ![image-20220510162456685](assets/image-20220510162456685.png)
+    ![image-20220510162456685](https://md-1259458491.cos.ap-nanjing.myqcloud.com/teach/assets/image-20220510162456685.png)
 
   + 通过 **dom.setAttribute** 添加：
 
@@ -212,7 +212,7 @@ function setRemUnit() {
   
     + 可以通过 **dom.getAttribute** 获取 dom.attibutes 里的属性
   
-      ![image-20220513103212475](assets/image-20220513103212475.png)
+      ![image-20220513103212475](https://md-1259458491.cos.ap-nanjing.myqcloud.com/teach/assets/image-20220513103212475.png)
 
   + 通过 **dom.属性名** 添加：（本质 是 js 为对象添加 成员的 语法）
 
@@ -224,11 +224,11 @@ function setRemUnit() {
     + data-本质也是 自定义属性，所以放在 attributes 上
     + 同时 还设置给 dom.dataset 中(去掉了data-前缀)
   
-  ![image-20220510115234535](assets/image-20220510115234535.png)
+  ![image-20220510115234535](https://md-1259458491.cos.ap-nanjing.myqcloud.com/teach/assets/image-20220510115234535.png)
   
   + 图解
 
-![image-20220510102837187](assets/image-20220510102837187.png)
+![image-20220510102837187](https://md-1259458491.cos.ap-nanjing.myqcloud.com/teach/assets/image-20220510102837187.png)
 
 
 
@@ -236,19 +236,19 @@ function setRemUnit() {
 
 #### 1.4.1 为什么要有dom
 
-![image-20220509000812025](assets/image-20220509000812025.png)
+![image-20220509000812025](https://md-1259458491.cos.ap-nanjing.myqcloud.com/teach/assets/image-20220509000812025.png)
 
 #### 1.4.2 三种树
 
 + Dom树，CSSOM树，RenderTree(呈现树)
 
-![image-20220509000657796](assets/image-20220509000657796.png)
+![image-20220509000657796](https://md-1259458491.cos.ap-nanjing.myqcloud.com/teach/assets/image-20220509000657796.png)
 
 #### 1.4.3 页面渲染过程
 
 + 根据 html 标签创建 **dom树**，根据 css 创建**css树**，再合并生成 **呈现树**，最后绘制界面给用户看
 
-![image-20220509091949192](assets/image-20220509091949192.png)
+![image-20220509091949192](https://md-1259458491.cos.ap-nanjing.myqcloud.com/teach/assets/image-20220509091949192.png)
 
 
 
@@ -271,21 +271,21 @@ list = Array.from(list) // 返回真数组
 + 事件冒泡：触发子元素的事件时，会 一路 触发 所有 的父级元素 同名事件，直到 html 标签结束
 + 事件捕获：触发子元素的事件时，先执行 根标签的同名事件，再逐级触发下一级同名事件，最后执行事件源的同名事件
 
-![image-20220228182658747](assets/image-20220228182658747.png)
+![image-20220228182658747](https://md-1259458491.cos.ap-nanjing.myqcloud.com/teach/assets/image-20220228182658747.png)
 
 ### 1.7 dom事件绑定
 
 + 直接 绑定 匿名函数，缺点：相同代码的函数，浪费内存
 
-![image-20220228181018017](assets/image-20220228181018017.png)
+![image-20220228181018017](https://md-1259458491.cos.ap-nanjing.myqcloud.com/teach/assets/image-20220228181018017.png)
 
 + 优化：dom共享共一个 函数
 
-![image-20220228181132052](assets/image-20220228181132052.png)
+![image-20220228181132052](https://md-1259458491.cos.ap-nanjing.myqcloud.com/teach/assets/image-20220228181132052.png)
 
 + 问题：新增元素，没有事件
 
-![image-20220228181247914](assets/image-20220228181247914.png)
+![image-20220228181247914](https://md-1259458491.cos.ap-nanjing.myqcloud.com/teach/assets/image-20220228181247914.png)
 
 + 解决方案：**事件委托！**
 
@@ -298,7 +298,7 @@ list = Array.from(list) // 返回真数组
   + 将 dom事件 委托给已经存在的父辈元素
   + 在事件处理函数中，通过 `e.target.tagName`判断是否为目标元素，如果是，则执行业务
 
-![image-20220228171413352](assets/image-20220228171413352.png)
+![image-20220228171413352](https://md-1259458491.cos.ap-nanjing.myqcloud.com/teach/assets/image-20220228171413352.png)
 
 ### 1.9 事件分类
 
@@ -350,13 +350,13 @@ list = Array.from(list) // 返回真数组
 + **window.parent** 是获取 **父页面** 的 **window**
 + **window.top** 是获取最 **上级祖页面** 的 **window**
 
-![image-20220429095808909](assets/image-20220429095808909.png)
+![image-20220429095808909](https://md-1259458491.cos.ap-nanjing.myqcloud.com/teach/assets/image-20220429095808909.png)
 
 ## 2.前后端分离--------------
 
 ### ip和端口
 
-![image-20220330181048966](assets/image-20220330181048966.png)
+![image-20220330181048966](https://md-1259458491.cos.ap-nanjing.myqcloud.com/teach/assets/image-20220330181048966.png)
 
 ### http
 
@@ -366,21 +366,21 @@ list = Array.from(list) // 返回真数组
   + 请求报文：浏览器 按照格式 发给 服务器的数据
   + 响应报文：服务器 按照格式 发给 浏览器的数据
 
-![image-20220224180313476](assets/image-20220224180313476.png)
+![image-20220224180313476](https://md-1259458491.cos.ap-nanjing.myqcloud.com/teach/assets/image-20220224180313476.png)
 
 #### http报文
 
-![image-20220328181516951](assets/image-20220328181516951.png)
+![image-20220328181516951](https://md-1259458491.cos.ap-nanjing.myqcloud.com/teach/assets/image-20220328181516951.png)
 
 #### http传参
 
-![image-20220328181531189](assets/image-20220328181531189.png)
+![image-20220328181531189](https://md-1259458491.cos.ap-nanjing.myqcloud.com/teach/assets/image-20220328181531189.png)
 
 ### CDN
 
 + CDN 的全称是 Content Delivery Network，即内容分发网络
 
-![img](assets/image-20220412173123123123.png)
+![img](https://md-1259458491.cos.ap-nanjing.myqcloud.com/teach/assets/image-20220412173123123123.png)
 
 + CDN 是构建在现有网络基础之上的智能虚拟网络，依靠部署在各地的边缘服务器，通过中心平台的负载均衡、内容分发、调度等功能模块
 + 特点：
@@ -389,7 +389,7 @@ list = Array.from(list) // 返回真数组
   + 提高用户访问响应速度和命中率
 + cdn服务商
 
-![image-20220412180659252](assets/image-20220412180659252.png)
+![image-20220412180659252](https://md-1259458491.cos.ap-nanjing.myqcloud.com/teach/assets/image-20220412180659252.png)
 
 ### 软件公司团队合作
 
@@ -413,9 +413,9 @@ list = Array.from(list) // 返回真数组
 
 + 原型图
 
-  ![image-20220222171721312](assets/image-20220222171721312.png)
+  ![image-20220222171721312](https://md-1259458491.cos.ap-nanjing.myqcloud.com/teach/assets/image-20220222171721312.png)
 
-#### 开发流程![image-20220427145434516](assets/image-20220427145434516.png)
+#### 开发流程![image-20220427145434516](https://md-1259458491.cos.ap-nanjing.myqcloud.com/teach/assets/image-20220427145434516.png)
 
 ### 团队协作开发工具
 
@@ -426,7 +426,7 @@ list = Array.from(list) // 返回真数组
 
 + 原型图：
 
-![原型图](assets/image-20220510165408872.png)
+![原型图](https://md-1259458491.cos.ap-nanjing.myqcloud.com/teach/assets/image-20220510165408872.png)
 
 + 在线设计工具 (原型 和 UI图 都支持)
 
@@ -434,7 +434,7 @@ list = Array.from(list) // 返回真数组
   + 蓝湖：http://www.lanhuapp.com/
   + 摹客：https://www.mockplus.cn/
   
-  ![image-20220423162805519](assets/image-20220423162805519.png)
+  ![image-20220423162805519](https://md-1259458491.cos.ap-nanjing.myqcloud.com/teach/assets/image-20220423162805519.png)
   
 + 制作原型图软件
 
@@ -454,7 +454,7 @@ list = Array.from(list) // 返回真数组
     + MockServer：基于Mockjs，使用简单功能强大
   + yapi：开发关系图
 
-![image-20220423161950369](assets/image-20220423161950369.png)
+![image-20220423161950369](https://md-1259458491.cos.ap-nanjing.myqcloud.com/teach/assets/image-20220423161950369.png)
 
 #### 前端工具
 
@@ -476,7 +476,7 @@ list = Array.from(list) // 返回真数组
   + 文档：https://help.eolink.com/#/tutorial/?groupID=c-469&productID=13
   + 作用：Eolink 是一款定位专业级的一站式API协作平台，也是国内最早投身API工具研发的平台之一，团队早在2016年就发布了国内首个集**Swagger+Postman+Mock+Jmeter**单点工具于一身的开源产品Eoapi，能够快速解决API文档管理、快速测试、Mock、API自动化测试等问题。并于2017年正式发布了全球首个在线API全生命周期管理平台，帮助全球开发者更高效的开发、测试和运维API
 
-  ![image-20220427145038144](assets/image-20220427145038144.png)
+  ![image-20220427145038144](https://md-1259458491.cos.ap-nanjing.myqcloud.com/teach/assets/image-20220427145038144.png)
 
   + 特点：
     + 支持所有类型的API文档管理
@@ -498,7 +498,7 @@ list = Array.from(list) // 返回真数组
 
 + 强烈推荐：详细复习 [【05Git.md】](./techs/05Git.md)
 
-![image-20220508230826090](assets/image-20220508230826090.png)
+![image-20220508230826090](https://md-1259458491.cos.ap-nanjing.myqcloud.com/teach/assets/image-20220508230826090.png)
 
 ### 服务器
 
@@ -508,11 +508,11 @@ list = Array.from(list) // 返回真数组
     + web服务器，接口服务器，业务服务器，数据库服务器等
     + 横向还可以部署 服务器集群 来解决大量用户访问的问题
 
-![image-20220506202446266](assets/image-20220506202446266.png)
+![image-20220506202446266](https://md-1259458491.cos.ap-nanjing.myqcloud.com/teach/assets/image-20220506202446266.png)
 
 ### 异步请求
 
-![image-20220510175623228](assets/image-20220510175623228.png)
+![image-20220510175623228](https://md-1259458491.cos.ap-nanjing.myqcloud.com/teach/assets/image-20220510175623228.png)
 
 #### 原生ajax对象
 
@@ -683,17 +683,17 @@ axios({
   + 当服务器分成多个业务中心时，ip是不一样的，需要使用不同基地址的axios来请求
 
 
-![image-20220221161947891](assets/image-20220221161947891.png)
+![image-20220221161947891](https://md-1259458491.cos.ap-nanjing.myqcloud.com/teach/assets/image-20220221161947891.png)
 
 #### axios 与 响应拦截器
 
-![image-20220406184253443](assets/image-20220406184253443.png)
+![image-20220406184253443](https://md-1259458491.cos.ap-nanjing.myqcloud.com/teach/assets/image-20220406184253443.png)
 
 #### axios上传图片
 
 + 第一步：实现图片预览
 
-![image-20220507163410821](assets/image-20220507163410821.png)
+![image-20220507163410821](https://md-1259458491.cos.ap-nanjing.myqcloud.com/teach/assets/image-20220507163410821.png)
 
 + 第二部：实现图片上传
 
@@ -729,7 +729,7 @@ axios({
 
   + 图解：
 
-  ![image-20220507175224613](assets/image-20220507175224613.png)
+  ![image-20220507175224613](https://md-1259458491.cos.ap-nanjing.myqcloud.com/teach/assets/image-20220507175224613.png)
 
 + 代码：
 
@@ -933,31 +933,31 @@ console.log(deep[0] === objects[0]);
 
 ### nodejs
 
-![image-20220510190614854](assets/image-20220510190614854.png)
+![image-20220510190614854](https://md-1259458491.cos.ap-nanjing.myqcloud.com/teach/assets/image-20220510190614854.png)
 
 #### 中间件
 
 + 本质：express服务器的中间件，就是 一个 函数，只不过，所有的请求到服务器来后，都会经过中间件函数，然后再去 目标接口函数
 
-![image-20220510184544901](assets/image-20220510184544901.png)
+![image-20220510184544901](https://md-1259458491.cos.ap-nanjing.myqcloud.com/teach/assets/image-20220510184544901.png)
 
 + 图解：
 
   浏览器 请求 `服务器接口`，会 先经过 `中间件函数`，再 执行 `接口函数`
 
-![image-20220510185042395](assets/image-20220510185042395.png)
+![image-20220510185042395](https://md-1259458491.cos.ap-nanjing.myqcloud.com/teach/assets/image-20220510185042395.png)
 
 ### axios分片上传
 
 + 详解图
 
-![image-20220328181124684](assets/image-20220328181124684.png)
+![image-20220328181124684](https://md-1259458491.cos.ap-nanjing.myqcloud.com/teach/assets/image-20220328181124684.png)
 
 
 
 + 代码
 
-![image-20220328181214425](assets/image-20220328181214425.png)
+![image-20220328181214425](https://md-1259458491.cos.ap-nanjing.myqcloud.com/teach/assets/image-20220328181214425.png)
 
 ## 3.JS高级-------------------
 
@@ -990,7 +990,7 @@ if (typeof noGlobal === "undefined") {
   + dom数组，包含 根据选择器 找到的 dom
   + jQuery，原型的各种方法
 
-![image-20220429100151455](assets/image-20220429100151455.png)
+![image-20220429100151455](https://md-1259458491.cos.ap-nanjing.myqcloud.com/teach/assets/image-20220429100151455.png)
 
 ### 神奇的 + 号
 
@@ -1050,7 +1050,7 @@ console.log(res)
 
 + 原理图：
 
-![image-20220307160754243](assets/image-20220307160754243.png)
+![image-20220307160754243](https://md-1259458491.cos.ap-nanjing.myqcloud.com/teach/assets/image-20220307160754243.png)
 
 ### 自己实现forEach
 
@@ -1113,11 +1113,11 @@ function forEach(obj, fn) {
 
 + 变量提升 和 函数提升
 
-![image-20220304142818944](assets/image-20220304142818944.png)
+![image-20220304142818944](https://md-1259458491.cos.ap-nanjing.myqcloud.com/teach/assets/image-20220304142818944.png)
 
 + 函数内部的局部变量提升
 
-![image-20220304143103542](assets/image-20220304143103542.png)
+![image-20220304143103542](https://md-1259458491.cos.ap-nanjing.myqcloud.com/teach/assets/image-20220304143103542.png)
 
 ### 函数声明方式
 
@@ -1185,9 +1185,9 @@ g2.shoot()
   + `g1.shoot()` -> js引擎 会直接去g1对象中找 shoot方法，没有，就去 原型中找！
     + 找到后，调用 shoot方法，并 将 g1对象 传给 方法中的 this
 
-![image-20220507150402494](assets/image-20220507150402494.png)
+![image-20220507150402494](https://md-1259458491.cos.ap-nanjing.myqcloud.com/teach/assets/image-20220507150402494.png)
 
-![image-20220406183855841](assets/image-20220406183855841.png)
+![image-20220406183855841](https://md-1259458491.cos.ap-nanjing.myqcloud.com/teach/assets/image-20220406183855841.png)
 
 ### 自执行函数
 
@@ -1204,7 +1204,7 @@ g2.shoot()
   ```
 
 
-![image-20220222113136328](assets/image-20220222113136328.png)
+![image-20220222113136328](https://md-1259458491.cos.ap-nanjing.myqcloud.com/teach/assets/image-20220222113136328.png)
 
 + 自执行函数中的this
   + 凡是没有指定this的，就是window
@@ -1226,11 +1226,11 @@ g2.shoot()
   但是，本案例中，由于 返回的 内部函数 中 使用了 变量a
   所以，这个作用域对象还不能被销毁，这种情况 就叫做【闭包】
 
-![image-20220225165329443](assets/image-20220225165329443.png)
+![image-20220225165329443](https://md-1259458491.cos.ap-nanjing.myqcloud.com/teach/assets/image-20220225165329443.png)
 
 + 闭包
 
-![image-20220308104129116](assets/image-20220308104129116.png)
+![image-20220308104129116](https://md-1259458491.cos.ap-nanjing.myqcloud.com/teach/assets/image-20220308104129116.png)
 
 ### 作用域
 
@@ -1272,13 +1272,13 @@ console.log(x) // 无法访问块内部变量: Uncaught ReferenceError: x is not
 
 + 调用函数时，会产生函数的执行作用域对象，父子函数的作用域连在一起，就是作用域链
 
-![image-20220427093602027](assets/image-20220427093602027.png)
+![image-20220427093602027](https://md-1259458491.cos.ap-nanjing.myqcloud.com/teach/assets/image-20220427093602027.png)
 
 ### 词法作用域
 
 + **(了解即可)**
 
-![image-20220428085031549](assets/image-20220428085031549.png)
+![image-20220428085031549](https://md-1259458491.cos.ap-nanjing.myqcloud.com/teach/assets/image-20220428085031549.png)
 
 + 一般编程语言中有 静态作用域(词法作用域)  和 动态作用域 之分
 
@@ -1293,11 +1293,11 @@ console.log(x) // 无法访问块内部变量: Uncaught ReferenceError: x is not
 + 函数原型：函数 通过 `prototype ` 属性向 `本函数的实例`  共享成员
 + 实例原型属性：new 的函数实例 通过 `__proto__` 访问 函数原型的共享成员
 
-![image-20220304165106343](assets/image-20220304165106343.png)
+![image-20220304165106343](https://md-1259458491.cos.ap-nanjing.myqcloud.com/teach/assets/image-20220304165106343.png)
 
 + 原型对象的 **constructor** 指回 构造函数本身
 
-![image-20220427090458543](assets/image-20220427090458543.png)
+![image-20220427090458543](https://md-1259458491.cos.ap-nanjing.myqcloud.com/teach/assets/image-20220427090458543.png)
 
 ### 原型链
 
@@ -1305,11 +1305,11 @@ console.log(x) // 无法访问块内部变量: Uncaught ReferenceError: x is not
   + 每个函数的 `prototype` 都是一个 对象，也有 `__proto__`指向上级的prototype，构成了一**链条**
   + 注意： `Object.prototype.__proto__ === null` 为止
 
-![image-20220407172259528](assets/image-20220407172259528.png)
+![image-20220407172259528](https://md-1259458491.cos.ap-nanjing.myqcloud.com/teach/assets/image-20220407172259528.png)
 
 + 有继承关系的原型链
 
-![image-20220425181713733](assets/image-20220425181713733.png)
+![image-20220425181713733](https://md-1259458491.cos.ap-nanjing.myqcloud.com/teach/assets/image-20220425181713733.png)
 
 
 
@@ -1321,11 +1321,11 @@ console.log(x) // 无法访问块内部变量: Uncaught ReferenceError: x is not
 
 + 值类型传参
 
-![image-20220224174814378](assets/image-20220224174814378.png)
+![image-20220224174814378](https://md-1259458491.cos.ap-nanjing.myqcloud.com/teach/assets/image-20220224174814378.png)
 
 + 引用类型传参
 
-![image-20220224174932201](assets/image-20220224174932201.png)
+![image-20220224174932201](https://md-1259458491.cos.ap-nanjing.myqcloud.com/teach/assets/image-20220224174932201.png)
 
 ### typeof与instanceof
 
@@ -1386,7 +1386,7 @@ str2 instanceof String // false
 
 + 原理图：
 
-![image-20220425181818192](assets/image-20220425181818192.png)
+![image-20220425181818192](https://md-1259458491.cos.ap-nanjing.myqcloud.com/teach/assets/image-20220425181818192.png)
 
 #### 模拟 instanceof
 
@@ -1409,11 +1409,11 @@ function instanceof2(left, right) {
 + 共同点：都包含 js引擎
 + 相同点：各自 拥有自己的 api接口
 
-![image-20220223152450034](assets/image-20220223152450034.png)
+![image-20220223152450034](https://md-1259458491.cos.ap-nanjing.myqcloud.com/teach/assets/image-20220223152450034.png)
 
 + 浏览器与nodejs
 
-![image-20220406184521585](assets/image-20220406184521585.png)
+![image-20220406184521585](https://md-1259458491.cos.ap-nanjing.myqcloud.com/teach/assets/image-20220406184521585.png)
 
 ### 包管理工具
 
@@ -1435,7 +1435,7 @@ function instanceof2(left, right) {
     + 去 安装目录中 找出 **npm.cmd** 脚本，内部 调用 **nodejs** 去执行 **npm-cli.js** 核心代码文件
     + `i 包名` 是作为 参数 传给 **npm-cli.js** 核心程序
 
-  ![image-20220223154701457](assets/image-20220223154701457.png)
+  ![image-20220223154701457](https://md-1259458491.cos.ap-nanjing.myqcloud.com/teach/assets/image-20220223154701457.png)
 
 #### yarn
 
@@ -1453,7 +1453,7 @@ function instanceof2(left, right) {
 
 + 命令：`npm config get prefix`
 
-![image-20220223164429918](assets/image-20220223164429918.png)
+![image-20220223164429918](https://md-1259458491.cos.ap-nanjing.myqcloud.com/teach/assets/image-20220223164429918.png)
 
 #### yarn全局路径
 
@@ -1462,7 +1462,7 @@ function instanceof2(left, right) {
   + 查看脚本路径：`yarn global bin`
 
 
-![image-20220223164633971](assets/image-20220223164633971.png)
+![image-20220223164633971](https://md-1259458491.cos.ap-nanjing.myqcloud.com/teach/assets/image-20220223164633971.png)
 
 #### 遇到找不到命令的错误
 
@@ -1477,13 +1477,13 @@ function instanceof2(left, right) {
 + 作用：帮助 设置 本机 npm 的 镜像服务器地址的工具
 + 全局安装：`npm i -g nrm`
 
-![image-20220223160723035](assets/image-20220223160723035.png)
+![image-20220223160723035](https://md-1259458491.cos.ap-nanjing.myqcloud.com/teach/assets/image-20220223160723035.png)
 
 + nrm常见命令：
 
   + 查看所有可用的知名镜像服务器：`nrm ls`
 
-    ![image-20220223161339947](assets/image-20220223161339947.png)
+    ![image-20220223161339947](https://md-1259458491.cos.ap-nanjing.myqcloud.com/teach/assets/image-20220223161339947.png)
 
   + 修改 本机 npm 的镜像服务器地址：`nrm set taobao`,达到 修改 npm 下载镜像路径的目的
 
@@ -1492,11 +1492,11 @@ function instanceof2(left, right) {
   + 命令：`npm i -g 包名`
   + 全局安装目录：`npm config ls` 打印的 prefix 就是 全局目录
 
-![image-20220223161151433](assets/image-20220223161151433.png)
+![image-20220223161151433](https://md-1259458491.cos.ap-nanjing.myqcloud.com/teach/assets/image-20220223161151433.png)
 
 ### js中的导入导出
 
-![image-20220225140025659](assets/image-20220225140025659.png)
+![image-20220225140025659](https://md-1259458491.cos.ap-nanjing.myqcloud.com/teach/assets/image-20220225140025659.png)
 
 + 问题：用什么语法 实现 js 中 引入js文件呢？谁来引入呢？
 
@@ -1546,7 +1546,7 @@ console.log(name,age)
 + 在 Vue项目中配置 导入方式
   + 通过 package.json 中 设置 type 属性
 
-![image-20220225115708703](assets/image-20220225115708703.png)
+![image-20220225115708703](https://md-1259458491.cos.ap-nanjing.myqcloud.com/teach/assets/image-20220225115708703.png)
 
 
 
@@ -1586,11 +1586,11 @@ console.log(name,age)
 
     + 对象.方法
 
-      ![image-20220225151249752](assets/image-20220225151249752.png)
+      ![image-20220225151249752](https://md-1259458491.cos.ap-nanjing.myqcloud.com/teach/assets/image-20220225151249752.png)
 
     + window.方法
 
-  ![image-20220225150636564](assets/image-20220225150636564.png)
+  ![image-20220225150636564](https://md-1259458491.cos.ap-nanjing.myqcloud.com/teach/assets/image-20220225150636564.png)
 
 ### this思考
 
@@ -1656,7 +1656,7 @@ fn1(5,6) //  -> 'abc' 1 2
 + 注意：**call 比 apply 效率更高**
 + 图例：
 
-![image-20220225161850036](assets/image-20220225161850036.png)
+![image-20220225161850036](https://md-1259458491.cos.ap-nanjing.myqcloud.com/teach/assets/image-20220225161850036.png)
 
 ### 手写bind
 
@@ -1671,7 +1671,7 @@ Function.prototype.fakeBind = function (obj, ...args) {
 + 函数内部 除了 `this`，还有一个 `arguments` 对象，用来保存 实参数据
 + 本质：保存了实参的 **伪数组**，有 **元素、下标、length**，但没有数组的方法
 
-![image-20220304095337474](assets/image-20220304095337474.png)
+![image-20220304095337474](https://md-1259458491.cos.ap-nanjing.myqcloud.com/teach/assets/image-20220304095337474.png)
 
 ### 深拷贝/浅拷贝
 
@@ -1974,7 +1974,7 @@ console.log('map返回值：', res2) // undefined
 
 + map修改 引用类型元素的 数组
 
-![image-20220224174654167](assets/image-20220224174654167.png)
+![image-20220224174654167](https://md-1259458491.cos.ap-nanjing.myqcloud.com/teach/assets/image-20220224174654167.png)
 
 
 
@@ -1982,7 +1982,7 @@ console.log('map返回值：', res2) // undefined
 
 #### 数组模拟堆栈和队列
 
-![image-20220224143907919](assets/image-20220224143907919.png)
+![image-20220224143907919](https://md-1259458491.cos.ap-nanjing.myqcloud.com/teach/assets/image-20220224143907919.png)
 
 ```js
 let arr = [1,2,3]
@@ -2151,7 +2151,7 @@ console.log(strRes);
 
 + 2级dom事件：属于 内存里的 一张` "2级事件表"`
 
-  ![image-20220407172728310](assets/image-20220407172728310.png)
+  ![image-20220407172728310](https://md-1259458491.cos.ap-nanjing.myqcloud.com/teach/assets/image-20220407172728310.png)
 
 ```js
 <!DOCTYPE html>
@@ -2309,11 +2309,11 @@ console.log(my)
 + 执行任务
 + 检查执行栈，如果执行栈为空，则跳回第 2 步；如不为空，则继续检查
 
-![image-20220225171703995](assets/image-20220225171703995.png)
+![image-20220225171703995](https://md-1259458491.cos.ap-nanjing.myqcloud.com/teach/assets/image-20220225171703995.png)
 
 #### 宏任务微任务
 
-![image-20220225171728873](assets/image-20220225171728873.png)
+![image-20220225171728873](https://md-1259458491.cos.ap-nanjing.myqcloud.com/teach/assets/image-20220225171728873.png)
 
 + 执行顺序： 同步任务 > 微任务 > 宏任务
 
@@ -2413,11 +2413,11 @@ axios({
 
 + axios成功回调函数 **res.data** 才是 响应报文体数据（服务器返回的业务数据）
 
-![image-20220222165724419](assets/image-20220222165724419.png)
+![image-20220222165724419](https://md-1259458491.cos.ap-nanjing.myqcloud.com/teach/assets/image-20220222165724419.png)
 
 
 
-![image-20220222165650182](assets/image-20220222165650182.png)
+![image-20220222165650182](https://md-1259458491.cos.ap-nanjing.myqcloud.com/teach/assets/image-20220222165650182.png)
 
 #### 失败回调函数
 
@@ -2437,7 +2437,7 @@ axios({
 })
 ```
 
-![image-20220222170824089](assets/image-20220222170824089.png)
+![image-20220222170824089](https://md-1259458491.cos.ap-nanjing.myqcloud.com/teach/assets/image-20220222170824089.png)
 
 #### async/await结合
 
@@ -2475,7 +2475,7 @@ function async doAjax(){
 
 + 语法对比
 
-![image-20220222171230795](assets/image-20220222171230795.png)
+![image-20220222171230795](https://md-1259458491.cos.ap-nanjing.myqcloud.com/teach/assets/image-20220222171230795.png)
 
 #### validateStatus
 
@@ -2483,7 +2483,7 @@ function async doAjax(){
   + 如果 返回 true，则继续执行 **try 代码块**
   + 如果 返回false，则执行 **catch代码块**
 
-![image-20220223111405348](assets/image-20220223111405348.png)
+![image-20220223111405348](https://md-1259458491.cos.ap-nanjing.myqcloud.com/teach/assets/image-20220223111405348.png)
 
 ## 5.Vue ------------------------
 
@@ -2491,35 +2491,35 @@ function async doAjax(){
 
 + 单文件组件命名：大驼峰 or 小写短横线
 
-  ![image-20220402090911525](assets/image-20220402090911525.png)
+  ![image-20220402090911525](https://md-1259458491.cos.ap-nanjing.myqcloud.com/teach/assets/image-20220402090911525.png)
 
 + 基础组件命名：应用特定样式和约定的基础组件 (也就是展示类的、无逻辑的或无状态的组件) 应该全部以一个特定的前缀开头，比如 `Base`、`App` 或 `V`
 
-  ![image-20220402091003439](assets/image-20220402091003439.png)
+  ![image-20220402091003439](https://md-1259458491.cos.ap-nanjing.myqcloud.com/teach/assets/image-20220402091003439.png)
 
 + 单例组件命名：整个项目只能有一个实例的组件
 
-  ![image-20220402091227101](assets/image-20220402091227101.png)
+  ![image-20220402091227101](https://md-1259458491.cos.ap-nanjing.myqcloud.com/teach/assets/image-20220402091227101.png)
 
 + 紧耦合组件命名：命名要相关联
 
-  ![image-20220402091457439](assets/image-20220402091457439.png)
+  ![image-20220402091457439](https://md-1259458491.cos.ap-nanjing.myqcloud.com/teach/assets/image-20220402091457439.png)
 
 ### Vant组件库注册源码
 
-![image-20220406183607712](assets/image-20220406183607712.png)
+![image-20220406183607712](https://md-1259458491.cos.ap-nanjing.myqcloud.com/teach/assets/image-20220406183607712.png)
 
 ### 自定义组件库
 
-![image-20220406183205943](assets/image-20220406183205943.png)
+![image-20220406183205943](https://md-1259458491.cos.ap-nanjing.myqcloud.com/teach/assets/image-20220406183205943.png)
 
 + 通过 Vue.use + install 方法 注册全部组件
 
-![image-20220406190001965](assets/image-20220406190001965.png)
+![image-20220406190001965](https://md-1259458491.cos.ap-nanjing.myqcloud.com/teach/assets/image-20220406190001965.png)
 
 + 注册后的组件位置
 
-![image-20220406190046447](assets/image-20220406190046447.png)
+![image-20220406190046447](https://md-1259458491.cos.ap-nanjing.myqcloud.com/teach/assets/image-20220406190046447.png)
 
 ### 二次封装组件库
 
@@ -2527,7 +2527,7 @@ function async doAjax(){
 
 ### Vue修饰符
 
-![image-20220405214126278](assets/image-20220405214126278.png)
+![image-20220405214126278](https://md-1259458491.cos.ap-nanjing.myqcloud.com/teach/assets/image-20220405214126278.png)
 
 > 几个重要的修饰符： .trim / .number / .native / .sync / .stop / .prevent / .enter
 
@@ -2564,7 +2564,7 @@ function async doAjax(){
 
   + **.native** -> 为 自定义组件的 根标签 添加 **dom事件**！
 
-  ![image-20220406170046152](assets/image-20220406170046152.png)
+  ![image-20220406170046152](https://md-1259458491.cos.ap-nanjing.myqcloud.com/teach/assets/image-20220406170046152.png)
 
 #### 键值修饰符
 
@@ -2598,7 +2598,7 @@ function async doAjax(){
 
   `Vue.config.keyCodes.a = 65`
 
-  ![image-20210909163942488](assets/image-20210909163942488.png)
+  ![image-20210909163942488](https://md-1259458491.cos.ap-nanjing.myqcloud.com/teach/assets/image-20210909163942488.png)
 
 #### 属性修饰符
 
@@ -2616,7 +2616,7 @@ function async doAjax(){
 
     子组件内部 通过 `$emit('update:属性名',新值)`将新值 传给 父组件属性
 
-  ![image-20220406172208392](assets/image-20220406172208392.png)
+  ![image-20220406172208392](https://md-1259458491.cos.ap-nanjing.myqcloud.com/teach/assets/image-20220406172208392.png)
 
 
 ##### .prop 
@@ -2625,7 +2625,7 @@ function async doAjax(){
 
 
 
-![image-20220406175140020](assets/image-20220406175140020.png)
+![image-20220406175140020](https://md-1259458491.cos.ap-nanjing.myqcloud.com/teach/assets/image-20220406175140020.png)
 
 + 区分两种属性：
   + Attribute 包含 标签 定义的所有属性
@@ -2715,7 +2715,7 @@ export default {
 
 + Vue中会对数组做改造：
 
-![image-20220225114345362](assets/image-20220225114345362.png)
+![image-20220225114345362](https://md-1259458491.cos.ap-nanjing.myqcloud.com/teach/assets/image-20220225114345362.png)
 
 ### 插槽
 
@@ -2727,15 +2727,15 @@ export default {
 
 #### 默认插槽
 
-![image-20220406183524594](assets/image-20220406183524594.png)
+![image-20220406183524594](https://md-1259458491.cos.ap-nanjing.myqcloud.com/teach/assets/image-20220406183524594.png)
 
 #### 具名插槽
 
-![image-20220406183357142](assets/image-20220406183357142.png)
+![image-20220406183357142](https://md-1259458491.cos.ap-nanjing.myqcloud.com/teach/assets/image-20220406183357142.png)
 
 #### 使用template
 
-![image-20220406183249660](assets/image-20220406183249660.png)
+![image-20220406183249660](https://md-1259458491.cos.ap-nanjing.myqcloud.com/teach/assets/image-20220406183249660.png)
 
 ### $set
 
@@ -2781,13 +2781,13 @@ change2() {
   + 为 组件中 的 选择题 添加一个 **属性选择器**，使用 **hash值**
   + 为 组件中所有标签 都添加一个 属性，使用 **hash值**
 
-![image-20220311100922909](assets/image-20220311100922909.png)
+![image-20220311100922909](https://md-1259458491.cos.ap-nanjing.myqcloud.com/teach/assets/image-20220311100922909.png)
 
 #### 作用于子组件根标签
 
 + 注意：子组件 的 根标签 也会被 添加 父组件的 hash值属性，所以 也能使用父组件的局部样式
 
-![image-20220311102627650](assets/image-20220311102627650.png)
+![image-20220311102627650](https://md-1259458491.cos.ap-nanjing.myqcloud.com/teach/assets/image-20220311102627650.png)
 
 ### 深度选择器
 
@@ -2806,19 +2806,19 @@ change2() {
 
 + 前置 生成 属性选择器 的 位置
 
-![image-20220311104011978](assets/image-20220311104011978.png)
+![image-20220311104011978](https://md-1259458491.cos.ap-nanjing.myqcloud.com/teach/assets/image-20220311104011978.png)
 
 
 
 ### MVVM模型
 
-![查看源图像](assets/77ffe1c57761e5a9598115b1059fdf3c.png)
+![查看源图像](https://md-1259458491.cos.ap-nanjing.myqcloud.com/teach/assets/77ffe1c57761e5a9598115b1059fdf3c.png)
 
 ### Vue数据平铺
 
 > Vue 在实例化过程中，会讲配置对象的成员头添加到 当前组件对象上
 
-![image-20220328181345767](assets/image-20220328181345767.png)
+![image-20220328181345767](https://md-1259458491.cos.ap-nanjing.myqcloud.com/teach/assets/image-20220328181345767.png)
 
 ### 数据劫持
 
@@ -2838,24 +2838,24 @@ change2() {
   + set 方法： 数据劫持，修改属性时，会直接调用 set方法
 + 本质：就是为 对象的属性 添加一个 附属的 **描述对象**，告诉js引擎这个属性特殊操作
 
-![image-20220303140341542](assets/image-20220303140341542.png)
+![image-20220303140341542](https://md-1259458491.cos.ap-nanjing.myqcloud.com/teach/assets/image-20220303140341542.png)
 
 + **使用 闭包中的变量 来保存 属性数据**
   + 一旦为对象.属性 添加 get/set后，就无法直接访问属性值
     也无法访问 描述对象 里的 value，那 get/set 的值应该从哪存/取呢？
   + --> 使用 函数的 形参/局部变量 (闭包)
 
-![image-20220303140504599](assets/image-20220303140504599.png)
+![image-20220303140504599](https://md-1259458491.cos.ap-nanjing.myqcloud.com/teach/assets/image-20220303140504599.png)
 
 + 案例：劫持属性更新dom
 
-![image-20220304094857871](assets/image-20220304094857871.png)
+![image-20220304094857871](https://md-1259458491.cos.ap-nanjing.myqcloud.com/teach/assets/image-20220304094857871.png)
 
 #### 数据代理Proxy
 
 > **Proxy** 对象用于创建一个对象的代理，从而实现基本操作的拦截和自定义（如属性查找、赋值、枚举、函数调用等）
 
-![image-20220304094949829](assets/image-20220304094949829.png)
+![image-20220304094949829](https://md-1259458491.cos.ap-nanjing.myqcloud.com/teach/assets/image-20220304094949829.png)
 
 ```js
 let obj = { id: 1, sex: '男', age: 11 }
@@ -2931,7 +2931,7 @@ Dep.trigger(tag, val)
 
 ### vue脚手架 与 vue.js
 
-![image-20220225140800747](assets/image-20220225140800747.png)
+![image-20220225140800747](https://md-1259458491.cos.ap-nanjing.myqcloud.com/teach/assets/image-20220225140800747.png)
 
 ### $nextTick
 
@@ -2946,7 +2946,7 @@ Dep.trigger(tag, val)
   + 思路，在修改了data数据后，要等待vue更新真实dom后，再去获取修改后的dom
   + 方案：将 获取 dom的代码 放到 $nextTick(function(){  // 获取真实dom  })
 
-![image-20220221154400359](assets/image-20220221154400359.png)
+![image-20220221154400359](https://md-1259458491.cos.ap-nanjing.myqcloud.com/teach/assets/image-20220221154400359.png)
 
 ### webpack
 
@@ -2957,7 +2957,7 @@ Dep.trigger(tag, val)
 
 ### Vue生命周期
 
-![image-20220328154351013](assets/image-20220328154351013.png)
+![image-20220328154351013](https://md-1259458491.cos.ap-nanjing.myqcloud.com/teach/assets/image-20220328154351013.png)
 
 + **生命周期：**Vue实例或VueComponent实例 创建 到 销毁的过程！
   + 创建
@@ -2992,11 +2992,11 @@ Dep.trigger(tag, val)
   + a.因为 很多接口 需要参数，而这些数据 常放在 Props和data中，所以必须要等能访问到这些数据时，再发送请求，否则 请求中 获取不到参数，导致接口执行失败！
   + b.之所以 一般放在 created 函数的原因，是因为此时是整个生命周期最早能访问到 data/props数据的时机！
 
-![image-20220328160457649](assets/image-20220328160457649.png)
+![image-20220328160457649](https://md-1259458491.cos.ap-nanjing.myqcloud.com/teach/assets/image-20220328160457649.png)
 
 ### 父子组件钩子执行顺序
 
-![image-20220328163603988](assets/image-20220328163603988.png)
+![image-20220328163603988](https://md-1259458491.cos.ap-nanjing.myqcloud.com/teach/assets/image-20220328163603988.png)
 
 ### Vue的key
 
@@ -3007,7 +3007,7 @@ Dep.trigger(tag, val)
   + 如果 加key，可以直接定位下标，在 对应的 dom前面 插入新元素，不需要 改变其他dom的属性值
     + 解决：由于根据下标找到要更新的dom，所以更新的dom少
 
-![image-20220307113955557](assets/image-20220307113955557.png)
+![image-20220307113955557](https://md-1259458491.cos.ap-nanjing.myqcloud.com/teach/assets/image-20220307113955557.png)
 
 ### 双向数据绑定
 
@@ -3015,7 +3015,7 @@ Dep.trigger(tag, val)
   + 当 **data数据** 发生改变时，自动将数据更新到 绑定的**表单元素.value**中
   + 当**表单元素的值**被用户改变时，自动将 **表单元素的value值** 传给 **data数据**
 
-![image-20220222141940443](assets/image-20220222141940443.png)
+![image-20220222141940443](https://md-1259458491.cos.ap-nanjing.myqcloud.com/teach/assets/image-20220222141940443.png)
 
 + Object.definedProperty() 
 
@@ -3030,7 +3030,7 @@ Dep.trigger(tag, val)
     + 子组件内部 的 dom值一旦改变，会触发 input 事件，然后将值设置给 子组件data，而子组件内部对data做数据劫持(set/get)，在其中的 set 内部 通过 $emit 触发自定义事件，进而将新的值传给父组件
 + 代码：(注意：没有使用 数据劫持)
 
-![image-20220505120244627](assets/image-20220505120244627.png)
+![image-20220505120244627](https://md-1259458491.cos.ap-nanjing.myqcloud.com/teach/assets/image-20220505120244627.png)
 
 + **注意：v-model 为不同的表单元素 使用不同 属性 和 事件**
   + text 和 textarea 使用 value 属性和 input 事件
@@ -3046,11 +3046,11 @@ Dep.trigger(tag, val)
   + 子组件 中 再根据 props.show 控制 **van-popup组件** 的显示和关闭
 + 问题：
 
-![image-20220505182718378](assets/image-20220505182718378.png)
+![image-20220505182718378](https://md-1259458491.cos.ap-nanjing.myqcloud.com/teach/assets/image-20220505182718378.png)
 
 + 解决方案：子组件中 让 **van-popup组件** 对计算属性做 双向数据绑定 
 
-![image-20220505172218151](assets/image-20220505172218151.png)
+![image-20220505172218151](https://md-1259458491.cos.ap-nanjing.myqcloud.com/teach/assets/image-20220505172218151.png)
 
 ### data和prop优先级
 
@@ -3108,7 +3108,7 @@ export function initState (vm: Component) {
   + 如果有，就可以定位成 发生改变的dom，从而更新到 **真实dom**中影响页面显示
   + 注意：虚拟dom的属性很少，对比时遍历效率高；真实dom属性太多，对比时性能很低
 
-![image-20220222145832823](assets/image-20220222145832823.png)
+![image-20220222145832823](https://md-1259458491.cos.ap-nanjing.myqcloud.com/teach/assets/image-20220222145832823.png)
 
 #### 虚拟dom是什么
 
@@ -3123,7 +3123,7 @@ export function initState (vm: Component) {
 
 + **真实dom，有200-300多属性(含事件属性)！**
 
-![image-20220509093437491](assets/image-20220509093437491.png)
+![image-20220509093437491](https://md-1259458491.cos.ap-nanjing.myqcloud.com/teach/assets/image-20220509093437491.png)
 
 + 虚拟DOM就是一个简化的对象，属性很少！
 
@@ -3149,7 +3149,7 @@ let vNode = {
 
 #### Diff 粒度
 
-![image-20220509140823977](assets/image-20220509140823977.png)、
+![image-20220509140823977](https://md-1259458491.cos.ap-nanjing.myqcloud.com/teach/assets/image-20220509140823977.png)、
 
 #### 组件 Diff
 
@@ -3178,7 +3178,7 @@ let vNode = {
 
 + 图解：
 
-![image-20220509140710690](assets/image-20220509140710690.png)
+![image-20220509140710690](https://md-1259458491.cos.ap-nanjing.myqcloud.com/teach/assets/image-20220509140710690.png)
 
 + 名词解释：
   + **旧前**是`更新前`虚拟DOM 中的头部指针
@@ -3188,7 +3188,7 @@ let vNode = {
 
 + 图解
 
-![image-20220509163549552](assets/image-20220509163549552.png)
+![image-20220509163549552](https://md-1259458491.cos.ap-nanjing.myqcloud.com/teach/assets/image-20220509163549552.png)
 
 #### Diff源码节选
 
@@ -3348,7 +3348,7 @@ function updateChildren (parentElm, oldCh, newCh, insertedVnodeQueue, removeOnly
 
 + 原理图
 
-  ![查看源图像](assets/vuex%E7%BB%93%E6%9E%84%E5%9B%BE.png)
+  ![查看源图像](https://md-1259458491.cos.ap-nanjing.myqcloud.com/teach/assets/vuex%E7%BB%93%E6%9E%84%E5%9B%BE.png)
 
 #### Pinia
 
@@ -3376,11 +3376,11 @@ function updateChildren (parentElm, oldCh, newCh, insertedVnodeQueue, removeOnly
   + 浏览器之后每次请求服务器接口，都将token带到请求头中，发给服务器
   + 服务器验证是否有token和是否失效，如果正常，则继续执行被请求接口业务，否则 返回401
 
-![image-20220312140642742](assets/image-20220312140642742.png)
+![image-20220312140642742](https://md-1259458491.cos.ap-nanjing.myqcloud.com/teach/assets/image-20220312140642742.png)
 
 
 
-![image-20220312140706847](assets/image-20220312140706847.png)
+![image-20220312140706847](https://md-1259458491.cos.ap-nanjing.myqcloud.com/teach/assets/image-20220312140706847.png)
 
 ### refresh_token
 
@@ -3400,11 +3400,11 @@ function updateChildren (parentElm, oldCh, newCh, insertedVnodeQueue, removeOnly
 
   + 方案一：重新登录
 
-  ![image-20220302141259857](assets/image-20220302141259857.png)
+  ![image-20220302141259857](https://md-1259458491.cos.ap-nanjing.myqcloud.com/teach/assets/image-20220302141259857.png)
 
   + 方案二：请求新的token
 
-![image-20220302141318970](assets/image-20220302141318970.png)
+![image-20220302141318970](https://md-1259458491.cos.ap-nanjing.myqcloud.com/teach/assets/image-20220302141318970.png)
 
 ### 实时更新订单数据
 
@@ -3415,7 +3415,7 @@ function updateChildren (parentElm, oldCh, newCh, insertedVnodeQueue, removeOnly
      b.备餐客户端(页面) 的厨房服务员 需要 看到最新订单
      c.所以服务器 会主动 将 最新订单 推送给 备餐客户
 
-![image-20220228113312268](assets/image-20220228113312268.png)
+![image-20220228113312268](https://md-1259458491.cos.ap-nanjing.myqcloud.com/teach/assets/image-20220228113312268.png)
 
 ## 7.补充知识--------------------
 
@@ -3423,11 +3423,11 @@ function updateChildren (parentElm, oldCh, newCh, insertedVnodeQueue, removeOnly
 
 #### cookie机制
 
-![image-20220304094603893](assets/image-20220304094603893.png)
+![image-20220304094603893](https://md-1259458491.cos.ap-nanjing.myqcloud.com/teach/assets/image-20220304094603893.png)
 
 #### session机制
 
-![image-20220304094623045](assets/image-20220304094623045.png)
+![image-20220304094623045](https://md-1259458491.cos.ap-nanjing.myqcloud.com/teach/assets/image-20220304094623045.png)
 
 ### 浏览器数据库
 
@@ -3445,11 +3445,11 @@ function updateChildren (parentElm, oldCh, newCh, insertedVnodeQueue, removeOnly
 
 ### web服务器基本流程
 
-![image-20220406184431639](assets/image-20220406184431639.png)
+![image-20220406184431639](https://md-1259458491.cos.ap-nanjing.myqcloud.com/teach/assets/image-20220406184431639.png)
 
 ### 翻墙
 
-![image-20220330181303577](assets/image-20220330181303577.png)
+![image-20220330181303577](https://md-1259458491.cos.ap-nanjing.myqcloud.com/teach/assets/image-20220330181303577.png)
 
 ### 线程是什么？
 
@@ -3463,7 +3463,7 @@ function updateChildren (parentElm, oldCh, newCh, insertedVnodeQueue, removeOnly
   + 接着再回去接着吃从第3个包子开始吃，吃完了
   + 再去接着喝剩下的半杯水
 
-![image-20220222110147961](assets/image-20220222110147961.png)
+![image-20220222110147961](https://md-1259458491.cos.ap-nanjing.myqcloud.com/teach/assets/image-20220222110147961.png)
 
 ### socket
 
@@ -3477,18 +3477,18 @@ function updateChildren (parentElm, oldCh, newCh, insertedVnodeQueue, removeOnly
     + 使用 **通信套接字** 向服务器发起连接请求
     + 连接建立后，与 服务端 分配的专属 **通信套接字** 进行 报文通信（请求/响应报文）
 
-![image-20220228175322938](assets/image-20220228175322938.png)
+![image-20220228175322938](https://md-1259458491.cos.ap-nanjing.myqcloud.com/teach/assets/image-20220228175322938.png)
 
 ### websocket
 
 + 专题：[【websokect】](./11WebSocekt/websocket.md)
 
 
-![image-20220420174241505](assets/image-20220420174241505.png)
+![image-20220420174241505](https://md-1259458491.cos.ap-nanjing.myqcloud.com/teach/assets/image-20220420174241505.png)
 
 ### vscode保存时格式化
 
-![image-20220228182411269](assets/image-20220228182411269.png)
+![image-20220228182411269](https://md-1259458491.cos.ap-nanjing.myqcloud.com/teach/assets/image-20220228182411269.png)
 
 ### eslint 深入
 
@@ -3516,7 +3516,7 @@ function updateChildren (parentElm, oldCh, newCh, insertedVnodeQueue, removeOnly
 
 #### 3.rules根据条件赋值
 
-![image-20220302104351714](assets/image-20220302104351714.png)
+![image-20220302104351714](https://md-1259458491.cos.ap-nanjing.myqcloud.com/teach/assets/image-20220302104351714.png)
 
 
 
@@ -3539,7 +3539,7 @@ function updateChildren (parentElm, oldCh, newCh, insertedVnodeQueue, removeOnly
 
 ##### 通过默认格式化器
 
-![默认格式化器](assets/image-20220301165951990.png)
+![默认格式化器](https://md-1259458491.cos.ap-nanjing.myqcloud.com/teach/assets/image-20220301165951990.png)
 
 ##### 通过eslint扩展工具
 
@@ -3550,13 +3550,13 @@ function updateChildren (parentElm, oldCh, newCh, insertedVnodeQueue, removeOnly
  }
 ```
 
-![img](assets/564148a18efa446a885dd7342a59858ctplv-k3u1fbpfcp-zoom-in-crop-mark1304000.webp)
+![img](https://md-1259458491.cos.ap-nanjing.myqcloud.com/teach/assets/564148a18efa446a885dd7342a59858ctplv-k3u1fbpfcp-zoom-in-crop-mark1304000.webp)
 
 #### 保存时格式化.vue
 
 + 设置 使用 prettier 来格式化修复 不同区域的 代码
 
-![img](assets/0c8c6d994be2410091d29d930fe80f9ctplv-k3u1fbpfcp-zoom-in-crop-mark1304000.webp)
+![img](https://md-1259458491.cos.ap-nanjing.myqcloud.com/teach/assets/0c8c6d994be2410091d29d930fe80f9ctplv-k3u1fbpfcp-zoom-in-crop-mark1304000.webp)
 
 ##### 问题：和 eslint 不兼容
 
@@ -3696,17 +3696,17 @@ class Promise {
 
 ### web容器
 
-![image-20220303140315268](assets/image-20220303140315268.png)
+![image-20220303140315268](https://md-1259458491.cos.ap-nanjing.myqcloud.com/teach/assets/image-20220303140315268.png)
 
 ### 服务器负载均衡
 
-![image-20220406184127041](assets/image-20220406184127041.png)
+![image-20220406184127041](https://md-1259458491.cos.ap-nanjing.myqcloud.com/teach/assets/image-20220406184127041.png)
 
 ## 8.前端工程化------------------
 
 ### vue脚手架工作方式
 
-![image-20220330180623981](assets/image-20220330180623981.png)
+![image-20220330180623981](https://md-1259458491.cos.ap-nanjing.myqcloud.com/teach/assets/image-20220330180623981.png)
 
 ### vue脚手架配置
 
@@ -3736,7 +3736,7 @@ class Promise {
 
 + 配置文件路径：`./conf/nginx.conf`
 
-![image-20220412154722637](assets/image-20220412154722637.png)
+![image-20220412154722637](https://md-1259458491.cos.ap-nanjing.myqcloud.com/teach/assets/image-20220412154722637.png)
 
 + 基础配置
 
@@ -3821,7 +3821,7 @@ nginx -t -c filename
   	好处：节点少、速度会快点、减轻web服务器压力、nginx代理服务器还可以做集群分布
   	缺点：暴露 代理服务器地址
 
-![image-20220330180734739](assets/image-20220330180734739.png)
+![image-20220330180734739](https://md-1259458491.cos.ap-nanjing.myqcloud.com/teach/assets/image-20220330180734739.png)
 
 ### 正向代理/反向代理
 
@@ -3850,7 +3850,7 @@ nginx -t -c filename
 
 ### codemirror代码编辑器
 
-![image-20220407143955411](assets/image-20220407143955411.png)
+![image-20220407143955411](https://md-1259458491.cos.ap-nanjing.myqcloud.com/teach/assets/image-20220407143955411.png)
 
 + 官网：https://codemirror.net/doc/manual.html#config
 + 功能：提供 在网页中 编写 和 展示 各种编程语言的 在线编辑器
@@ -3932,7 +3932,7 @@ export default {
 + **mavon-editor**：https://www.npmjs.com/package/mavon-editor
 + 在线学习文章：[推荐](https://blog.csdn.net/suo082407128/article/details/99327138)
 
-![image-20220407154942081](assets/image-20220407154942081.png)
+![image-20220407154942081](https://md-1259458491.cos.ap-nanjing.myqcloud.com/teach/assets/image-20220407154942081.png)
 
 #### md语法转换器
 
@@ -3943,7 +3943,7 @@ export default {
   + md语法格式：将来 编辑文章时，要读取 并返回给浏览器
   + html语法格式：将来 查阅文章时，直接 返回 给浏览器
 
-![image-20220407155258020](assets/image-20220407155258020.png)
+![image-20220407155258020](https://md-1259458491.cos.ap-nanjing.myqcloud.com/teach/assets/image-20220407155258020.png)
 
 + 使用语法：
 
@@ -4004,7 +4004,7 @@ export default {
 
 + 注意：需要先点击安装后的提示 来 登录提交申请，等确认后才能工作！
 
-  ![image-20220407091256067](assets/image-20220407091256067.png)
+  ![image-20220407091256067](https://md-1259458491.cos.ap-nanjing.myqcloud.com/teach/assets/image-20220407091256067.png)
 
 ## 10.前端网络安全--------------
 
@@ -4022,20 +4022,20 @@ let strSql = "select * from users where uname ="+ uName +"  and upwd ="+uPwd
 + 防止sql注入，必须在 服务器端 来采取措施：
   + 不要 使用 字符串 拼接的方式 来 构造 `sql语句`
 
-![image-20220408102333277](assets/image-20220408102333277.png)
+![image-20220408102333277](https://md-1259458491.cos.ap-nanjing.myqcloud.com/teach/assets/image-20220408102333277.png)
 
 ### XSS攻击
 
 + 本质：提交 包含 script 标签的 恶意脚本内容到服务器数据库，读取后会被浏览器端执行恶意代码
 + 推荐阅读：https://zhuanlan.zhihu.com/p/101300360
 
-![image-20220408091314832](assets/image-20220408091314832.png)
+![image-20220408091314832](https://md-1259458491.cos.ap-nanjing.myqcloud.com/teach/assets/image-20220408091314832.png)
 
 + 解决方案：
   + 遇到 script 标签，就将他们的 > 和 <  转成 `&gt;`  和  `\&lt; `
 + 模拟图：
 
-![image-20220408103050764](assets/image-20220408103050764.png)
+![image-20220408103050764](https://md-1259458491.cos.ap-nanjing.myqcloud.com/teach/assets/image-20220408103050764.png)
 
 ### CSRF攻击
 
@@ -4047,13 +4047,13 @@ let strSql = "select * from users where uname ="+ uName +"  and upwd ="+uPwd
 
 + 推荐阅读：https://zhuanlan.zhihu.com/p/114750961
 
-![image-20220408092028605](assets/image-20220408092028605.png)
+![image-20220408092028605](https://md-1259458491.cos.ap-nanjing.myqcloud.com/teach/assets/image-20220408092028605.png)
 
 + 解决方案
 
   + 方案一：reffer判断
 
-    ![image-20220408104702294](assets/image-20220408104702294.png)
+    ![image-20220408104702294](https://md-1259458491.cos.ap-nanjing.myqcloud.com/teach/assets/image-20220408104702294.png)
 
   + 方案二：token判断
 
@@ -4068,7 +4068,7 @@ let strSql = "select * from users where uname ="+ uName +"  and upwd ="+uPwd
 + 分布式拒绝服务攻击(Distributed Denial of Service)
 + 本质：攻击者利用“肉鸡”对目标网站在较短的时间内发起大量请求，大规模消耗目标网站的主机资源，让它无法正常服务。
 
-![image-20220408093046759](assets/image-20220408093046759.png)
+![image-20220408093046759](https://md-1259458491.cos.ap-nanjing.myqcloud.com/teach/assets/image-20220408093046759.png)
 
 ### DNS劫持
 
@@ -4076,16 +4076,16 @@ let strSql = "select * from users where uname ="+ uName +"  and upwd ="+uPwd
 
 + 本质：又称域名劫持,通过某些手段取得某域名的解析控制权，修改此域名的解析结果，导致对该域名的访问由原IP地址转入到修改后的指定IP
 
-![image-20220408112916180](assets/image-20220408112916180.png)
+![image-20220408112916180](https://md-1259458491.cos.ap-nanjing.myqcloud.com/teach/assets/image-20220408112916180.png)
 
-![image-20220408094636348](assets/image-20220408094636348.png)
+![image-20220408094636348](https://md-1259458491.cos.ap-nanjing.myqcloud.com/teach/assets/image-20220408094636348.png)
 
 ### TCP劫持
 
 + 本质：篡改TCP数据包内容
 + 推荐阅读：https://blog.csdn.net/qq_41959899/article/details/104905317
 
-![image-20220408095618890](assets/image-20220408095618890.png)
+![image-20220408095618890](https://md-1259458491.cos.ap-nanjing.myqcloud.com/teach/assets/image-20220408095618890.png)
 
 ### 端口扫描技术
 
@@ -4108,7 +4108,7 @@ let strSql = "select * from users where uname ="+ uName +"  and upwd ="+uPwd
 
 ### 秘钥交换
 
-![image-20220408115340865](assets/image-20220408115340865.png)
+![image-20220408115340865](https://md-1259458491.cos.ap-nanjing.myqcloud.com/teach/assets/image-20220408115340865.png)
 
 ### hash算法
 
@@ -4127,7 +4127,7 @@ let strSql = "select * from users where uname ="+ uName +"  and upwd ="+uPwd
 
   如：
 
-  ![1535684187189](assets/1535684187189.png)
+  ![1535684187189](https://md-1259458491.cos.ap-nanjing.myqcloud.com/teach/assets/1535684187189.png)
 
 
 #### 特点
@@ -4156,13 +4156,13 @@ let strSql = "select * from users where uname ="+ uName +"  and upwd ="+uPwd
 
 + 不可逆
 
-  ![1535686810813](assets/1535686810813.png)
+  ![1535686810813](https://md-1259458491.cos.ap-nanjing.myqcloud.com/teach/assets/1535686810813.png)
 
 #### 破解方式
 
 + 暴力穷举 【[在线工具](http://cmd5.com/)】
 
-  ![1535686650110](assets/1535686650110.png)
+  ![1535686650110](https://md-1259458491.cos.ap-nanjing.myqcloud.com/teach/assets/1535686650110.png)
 
 + 小结：为了安全起见，现在一般使用 sha256 算法
 
@@ -4181,21 +4181,21 @@ let strSql = "select * from users where uname ="+ uName +"  and upwd ="+uPwd
 + 每次请求一个资源，就要建立一个tcp连接，拿到资源后就立即销毁！
 + 缺点：在web2.0网页中，页面包含很多图片和外部资源，要建立很多次tcp连接，严重影响性能！
 
-![image-20220424093956743](assets/image-20220424093956743.png)
+![image-20220424093956743](https://md-1259458491.cos.ap-nanjing.myqcloud.com/teach/assets/image-20220424093956743.png)
 
 ##### http1.1
 
 + 提供 长链接模式(conection:keep-alive)，允许使用一个连接通道 **串行**发送多次请求！
 + 缺点：**对头阻塞问题**，只能依次请求，上次请求没有完成之前，后面的请求必须排队！
 
-![image-20220424094331301](assets/image-20220424094331301.png)
+![image-20220424094331301](https://md-1259458491.cos.ap-nanjing.myqcloud.com/teach/assets/image-20220424094331301.png)
 
 ##### http1.1 pipeline
 
 + http1.1 后期允许开启 pipeline机制，同时发送多个请求
 + 缺点：响应也是按发送顺序依次到达，依然存在 **对头阻塞问题**
 
-![image-20220424100000468](assets/image-20220424100000468.png)
+![image-20220424100000468](https://md-1259458491.cos.ap-nanjing.myqcloud.com/teach/assets/image-20220424100000468.png)
 
 ##### http2.0
 
@@ -4204,11 +4204,11 @@ let strSql = "select * from users where uname ="+ uName +"  and upwd ="+uPwd
   + 浏览器对**同一个域名**只建立一个TCP**通道**，所有http请求都通过这个通道完成。
   + 将每个请求报文切割为更小的片段，并且给同一个请求的片段分配相同的id，方便服务端识别组合
 
-![image-20220424111900225](assets/image-20220424111900225.png)
+![image-20220424111900225](https://md-1259458491.cos.ap-nanjing.myqcloud.com/teach/assets/image-20220424111900225.png)
 
 #### http趣图对比
 
-![image-20220424105000372](assets/image-20220424105000372.png)
+![image-20220424105000372](https://md-1259458491.cos.ap-nanjing.myqcloud.com/teach/assets/image-20220424105000372.png)
 
 ##### 
 
@@ -4221,7 +4221,7 @@ let strSql = "select * from users where uname ="+ uName +"  and upwd ="+uPwd
 + http 协议：不安全，未加密
 + https 协议：安全，对请求报文 和 响应报文 做加密
 
-![image-20211129182424353](assets/image-20211129182424353.png)
+![image-20211129182424353](https://md-1259458491.cos.ap-nanjing.myqcloud.com/teach/assets/image-20211129182424353.png)
 
 ### 2.对称加密与非对称加密
 
@@ -4237,7 +4237,7 @@ let strSql = "select * from users where uname ="+ uName +"  and upwd ="+uPwd
 
   算法本身安全，但使用场景不够安全，因为解密和加密都是同一个秘钥
 
-![image-20211129183308185](assets/image-20211129183308185.png)
+![image-20211129183308185](https://md-1259458491.cos.ap-nanjing.myqcloud.com/teach/assets/image-20211129183308185.png)
 
 
 
@@ -4262,7 +4262,7 @@ let strSql = "select * from users where uname ="+ uName +"  and upwd ="+uPwd
 
   2.将公钥公布给外界
 
-  ![image-20211129183423413](assets/image-20211129183423413.png)
+  ![image-20211129183423413](https://md-1259458491.cos.ap-nanjing.myqcloud.com/teach/assets/image-20211129183423413.png)
 
 
 
@@ -4272,7 +4272,7 @@ let strSql = "select * from users where uname ="+ uName +"  and upwd ="+uPwd
 
   Linda 用 `James的公钥` 对数据进行加密，然后发给 James，James用自己的私钥解密
 
-  ![image-20211129183434662](assets/image-20211129183434662.png)
+  ![image-20211129183434662](https://md-1259458491.cos.ap-nanjing.myqcloud.com/teach/assets/image-20211129183434662.png)
 
   > 因为一个公钥加密的数据 只有 对应的 私钥才能解密，所以密文很安全
   >
@@ -4286,17 +4286,17 @@ let strSql = "select * from users where uname ="+ uName +"  and upwd ="+uPwd
 
   **第一步：**James 用 `James的私钥` 对明文的hash值进行加密，把密文(签名)和明文一起发给 Linda
 
-  ![image-20211129183450575](assets/image-20211129183450575.png)
+  ![image-20211129183450575](https://md-1259458491.cos.ap-nanjing.myqcloud.com/teach/assets/image-20211129183450575.png)
 
   **第二步：**Linda 用 `James的公钥` 进行解密，解密后的明文hash值 和 接收到的明文的hash值进行对比，如果一样则是 James 发的
 
-  ![image-20211129183500628](assets/image-20211129183500628.png)
+  ![image-20211129183500628](https://md-1259458491.cos.ap-nanjing.myqcloud.com/teach/assets/image-20211129183500628.png)
 
 ### 3. https协议
 
 + 端口 443
 
-![image-20211129182424353](assets/image-20211129182424353.png)
+![image-20211129182424353](https://md-1259458491.cos.ap-nanjing.myqcloud.com/teach/assets/image-20211129182424353.png)
 
 #### 3.1 问题
 
@@ -4312,7 +4312,7 @@ let strSql = "select * from users where uname ="+ uName +"  and upwd ="+uPwd
 
 + 图例中体现了 http/https 与 websocket/websockets 关系
 
-![image-20220419094833073](assets/image-20220419094833073.png)
+![image-20220419094833073](https://md-1259458491.cos.ap-nanjing.myqcloud.com/teach/assets/image-20220419094833073.png)
 
 #### 3.3 https认证基本流程
 
@@ -4332,7 +4332,7 @@ let strSql = "select * from users where uname ="+ uName +"  and upwd ="+uPwd
   + 使用`网站A公钥` 对 `会话秘钥B` 做加密，并发给 服务器
 + 浏览器和服务器 使用 `浏览器会话秘钥B` 来对 请求报文 和 响应报文 做加密
 
-![image-20211130165817603](assets/image-20211130165817603.png)
+![image-20211130165817603](https://md-1259458491.cos.ap-nanjing.myqcloud.com/teach/assets/image-20211130165817603.png)
 
 ### 4. 证书认证机构
 
@@ -4343,7 +4343,7 @@ let strSql = "select * from users where uname ="+ uName +"  and upwd ="+uPwd
 
 + 保存在系统中
 
-![image-20211129162142190](assets/image-20211129162142190.png)
+![image-20211129162142190](https://md-1259458491.cos.ap-nanjing.myqcloud.com/teach/assets/image-20211129162142190.png)
 
 ## 二.web优化----------
 
@@ -4378,7 +4378,7 @@ let strSql = "select * from users where uname ="+ uName +"  and upwd ="+uPwd
 
 + 推荐阅读：http://verymuch.site/2018/10/09/web-browser-cache-strategy/
 
-![image-20220409094937855](assets/image-20220409094937855.png)
+![image-20220409094937855](https://md-1259458491.cos.ap-nanjing.myqcloud.com/teach/assets/image-20220409094937855.png)
 
 ```js
 缓存分为强缓存和协商缓存。其中强缓存包括Expires和Cache-Control，主要是在过期策略生效时应用的缓存。弱缓存包括Last-Modified和ETag，是在协商策略后应用的缓存。强弱缓存之间的主要区别在于获取资源时是否会发送请求。
@@ -4399,7 +4399,7 @@ no-cache并不是指不缓存文件，no-store才是指不缓存文件。no-cach
   6. 刷新（Command + R / F5）
   7. 强制刷新（Command + Shift + R / Ctrl + F5）
 
-  ![image-20220411115344823](assets/image-20220411115344823.png)
+  ![image-20220411115344823](https://md-1259458491.cos.ap-nanjing.myqcloud.com/teach/assets/image-20220411115344823.png)
 
 + 细节：在Chrome下【刷新】时，只有主资源的缓存应用方式如上图所示，**派生资源的缓存应用方式与新标签打开类似，会判断缓存是否过期**。
 
@@ -4447,7 +4447,7 @@ no-cache并不是指不缓存文件，no-store才是指不缓存文件。no-cach
 + 所有外部js文件 都在 页面头部 通过 link标签 去 预加载
 + 在页面底部 通过 script 标签 再次加载同名 js文件，此时 ，link标签大概率已经 将 js文件请求完毕 并 缓存在浏览器了，所以  script 标签 可以直接 从缓存中 读取js代码来执行！
 
-![image-20220411160605753](assets/image-20220411160605753.png)
+![image-20220411160605753](https://md-1259458491.cos.ap-nanjing.myqcloud.com/teach/assets/image-20220411160605753.png)
 
 ### 图片
 
@@ -4552,11 +4552,11 @@ no-cache并不是指不缓存文件，no-store才是指不缓存文件。no-cach
 
   打包优化前后对比：(只优化vant组件库的截图)
 
-  ![image-20220409153902176](assets/image-20220409153902176.png)
+  ![image-20220409153902176](https://md-1259458491.cos.ap-nanjing.myqcloud.com/teach/assets/image-20220409153902176.png)
 
   + 由于 编译后的文件中 不包含 忽略的第三方模块，需要 在 `./public/index.html `中直接导入
 
-    ![image-20220409154043081](assets/image-20220409154043081.png)
+    ![image-20220409154043081](https://md-1259458491.cos.ap-nanjing.myqcloud.com/teach/assets/image-20220409154043081.png)
 
   + 重复引入相同模块 **情况**：
 
@@ -4669,7 +4669,7 @@ no-cache并不是指不缓存文件，no-store才是指不缓存文件。no-cach
 
 + 图解：
 
-![image-20220411110055782](assets/image-20220411110055782.png)
+![image-20220411110055782](https://md-1259458491.cos.ap-nanjing.myqcloud.com/teach/assets/image-20220411110055782.png)
 
 #### webpack dll优化
 
@@ -4718,7 +4718,7 @@ no-cache并不是指不缓存文件，no-store才是指不缓存文件。no-cach
 
 + 代码参考：https://gitee.com/uptocoding/jz-ui
 
-![image-20220414105058141](assets/image-20220414105058141.png)
+![image-20220414105058141](https://md-1259458491.cos.ap-nanjing.myqcloud.com/teach/assets/image-20220414105058141.png)
 
 #### 2.2 子组件中二次v-model
 
@@ -4729,11 +4729,11 @@ no-cache并不是指不缓存文件，no-store才是指不缓存文件。no-cach
   + 子组件 中 再根据 props.show 控制 **van-popup组件** 的显示和关闭
 + 问题：
 
-![image-20220505182718378](assets/image-20220505182718378.png)
+![image-20220505182718378](https://md-1259458491.cos.ap-nanjing.myqcloud.com/teach/assets/image-20220505182718378.png)
 
 + 解决方案：子组件中 让 **van-popup组件** 对计算属性做 双向数据绑定 
 
-![image-20220505172218151](assets/image-20220505172218151.png)
+![image-20220505172218151](https://md-1259458491.cos.ap-nanjing.myqcloud.com/teach/assets/image-20220505172218151.png)
 
 ### 3.webpack
 
@@ -4831,7 +4831,7 @@ r2.add() // 4401
 
 ### 6.对象中方法里this
 
-![image-20220307192304241](assets/image-20220307192304241.png)
+![image-20220307192304241](https://md-1259458491.cos.ap-nanjing.myqcloud.com/teach/assets/image-20220307192304241.png)
 
 
 
@@ -4852,7 +4852,7 @@ r2.add() // 4401
   + 验证 手机号 和 验证码 是否 正确：去 数据库 或 缓存中 查询！
   + 如果查到了，则登录成功；否则 登录失败
 
-![image-20220304164902192](assets/image-20220304164902192.png)
+![image-20220304164902192](https://md-1259458491.cos.ap-nanjing.myqcloud.com/teach/assets/image-20220304164902192.png)
 
 ### 8.交换两个变量
 
@@ -4898,7 +4898,7 @@ console.log('最大值为：' + maxNum); // 100
 
 ### 10.toString
 
-![image-20220307192522675](assets/image-20220307192522675.png)
+![image-20220307192522675](https://md-1259458491.cos.ap-nanjing.myqcloud.com/teach/assets/image-20220307192522675.png)
 
 ### 11.数组排序
 
@@ -4948,17 +4948,17 @@ console.log(res);
 
 ### 1.对象null错误
 
-![image-20220311200652596](assets/image-20220311200652596.png)
+![image-20220311200652596](https://md-1259458491.cos.ap-nanjing.myqcloud.com/teach/assets/image-20220311200652596.png)
 
 ### 2.子组件属性检查错误
 
-![image-20220316105219944](assets/image-20220316105219944.png)
+![image-20220316105219944](https://md-1259458491.cos.ap-nanjing.myqcloud.com/teach/assets/image-20220316105219944.png)
 
 ### 3.常见脚本问题
 
 #### 3.1找不到 脚本
 
-![image-20220310103558395](assets/image-20220310103558395.png)
+![image-20220310103558395](https://md-1259458491.cos.ap-nanjing.myqcloud.com/teach/assets/image-20220310103558395.png)
 
 + 原因有两种：
   + 其一：没有安装 这个包！
@@ -4975,13 +4975,13 @@ console.log(res);
 
 #### 3.2 禁止运行脚本
 
-![image-20220310104544693](assets/image-20220310104544693.png)
+![image-20220310104544693](https://md-1259458491.cos.ap-nanjing.myqcloud.com/teach/assets/image-20220310104544693.png)
 
 + 操作系统默认 关闭了 脚本运行的**开关**，需要手动打开：
   + `set-executioinpolicy remotesigned`
   + 输入 `y `就可以了
 
-![image-20220310104645353](assets/image-20220310104645353.png)
+![image-20220310104645353](https://md-1259458491.cos.ap-nanjing.myqcloud.com/teach/assets/image-20220310104645353.png)
 
 
 
