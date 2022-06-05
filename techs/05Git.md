@@ -10,7 +10,7 @@
 + **Git** 是一个【开源分布式版本控制系统】，是目前世界上最先进最流行的版本控制系统。
   可以快速高效地处理从很小到非常大的项目版本管理
 
-![image-20220508231429897](assets/image-20220508231429897.png)
+![image-20220508231429897](../assets/image-20220508231429897.png)
 
 ### 2.Git 的特性
 
@@ -32,26 +32,26 @@ git config --global user.email "邮箱-推荐自己的常用邮箱"
 
   `C:/Users/用户名文件夹/.gitconfig`
 
-![image-20220508232914362](assets/image-20220508232914362.png)
+![image-20220508232914362](../assets/image-20220508232914362.png)
 
 ### 2.基本操作
 
 + 创建本地仓库 `git init`
 
-![image-20220508233855389](assets/image-20220508233855389.png)
+![image-20220508233855389](../assets/image-20220508233855389.png)
 
 + 添加文件到 暂存区 `git add .` 
 + 提交生成新版本 `git commit -m'备注'`
 + 邹芬奇图：
 
-![image-20220508232256923](assets/image-20220508232256923.png)
+![image-20220508232256923](../assets/image-20220508232256923.png)
 
 ### 3.删除文件
 
 + 其实真实操作的话，直接删除 工作区文件，重新 add 和 commit 就可以了
 + 这里只是 让大家对 版本的理解更深入一点
 
-![image-20220508233302519](assets/image-20220508233302519.png)
+![image-20220508233302519](../assets/image-20220508233302519.png)
 
 
 
@@ -62,7 +62,7 @@ git config --global user.email "邮箱-推荐自己的常用邮箱"
 + 切换版本 `git reset --hard 版本号`
 + 查看 所有版本 `git reflog --pretty=oneline`
 
-![image-20220508233600623](assets/image-20220508233600623.png)
+![image-20220508233600623](../assets/image-20220508233600623.png)
 
 ### 5.git忽略文件
 
@@ -96,26 +96,26 @@ node_modules/bin/
 
 ### 1.本地仓库管理远程仓库地址
 
-![image-20220508234815262](assets/image-20220508234815262.png)
+![image-20220508234815262](../assets/image-20220508234815262.png)
 
 ### 2.生成公钥私钥
 
 + gitee说明：https://gitee.com/help/articles/4181
 + 通过工具生成：`ssh-keygen -t ed25519 -C "xxxxx@xxxxx.com"`
 
-![image-20220508235057704](assets/image-20220508235057704.png)
+![image-20220508235057704](../assets/image-20220508235057704.png)
 
-![image-20220508234719428](assets/image-20220508234719428.png)
+![image-20220508234719428](../assets/image-20220508234719428.png)
 
 ### 3.配置公钥
 
 + 用处
 
-![image-20220508235950640](assets/image-20220508235950640.png)
+![image-20220508235950640](../assets/image-20220508235950640.png)
 
 + 配置
 
-![image-20220508235615081](assets/image-20220508235615081.png)
+![image-20220508235615081](../assets/image-20220508235615081.png)
 
 ### 4.远程仓库
 
@@ -123,14 +123,14 @@ node_modules/bin/
 + 首次提交 `git push -u origin master`
 + 非首次提交 `git push`
 
-![image-20220508235803819](assets/image-20220508235803819.png)
+![image-20220508235803819](../assets/image-20220508235803819.png)
 
 ### 5.分支与版本关系
 
 + 每个分支 有自己的版本体系
 
-![image-20220509000032483](assets/image-20220509000032483.png)
+![image-20220509000032483](../assets/image-20220509000032483.png)
 
 ## 四.常见命令
 
-![image-20220509000136571](assets/image-20220509000136571.png)
+![image-20220509000136571](../assets/image-20220509000136571.png)

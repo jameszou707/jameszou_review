@@ -17,7 +17,7 @@
 + MDN：https://developer.mozilla.org/zh-CN/docs/Web/API/IntersectionObserver
 + 通俗：浏览器提供的**异步监控**被观察元素出现在指定可视区域后，触发回调函数的机制！
 
-![image-20220428101840680](assets/image-20220428101840680.png)
+![image-20220428101840680](../assets/image-20220428101840680.png)
 
 ### 3.语法
 
@@ -29,19 +29,19 @@
 
   + **callback：当 被观察元素 到达 可视区域 时触发**
 
-  ![image-20220428102259876](assets/image-20220428102259876.png)
+  ![image-20220428102259876](../assets/image-20220428102259876.png)
 
   + **options：配置参数**
 
-  ![image-20220428110844351](assets/image-20220428110844351.png)
+  ![image-20220428110844351](../assets/image-20220428110844351.png)
 
   + **rootMargin图解** ：只要进入 rootMargin区域 就相当于 进入 可视区域了！
 
-![image-20220428104106666](assets/image-20220428104106666.png)
+![image-20220428104106666](../assets/image-20220428104106666.png)
 
 #### 3.2 实例函数
 
-![image-20220428111600277](assets/image-20220428111600277.png)
+![image-20220428111600277](../assets/image-20220428111600277.png)
 
 ### 4.小案例
 
